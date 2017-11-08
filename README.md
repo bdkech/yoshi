@@ -6,8 +6,6 @@ Autogeneration of luigi tasks using templates and code parsing.
 - Function for checking modules imported
     - resolve possibly adding functions not from above
 - Parse function calls to define:
-    - func name
-    - any keywords
     - args and arg types (if available)
 - Build network based off of dependencies
 
