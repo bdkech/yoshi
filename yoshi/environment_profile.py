@@ -30,9 +30,11 @@ def parse_function(function_string):
     args, and any keywords
     """
 
-    call = ast.parse(function_string).body[0].value
-    args = call.args
-    keywords = call.keywords
-    function_id = call.func.id
+    if isinstance(function_string,str):
+        call = ast.parse(function_string).body[0].value
+        if hasattr(call,'args'):
+            args = call.args
+            keywords = call.keywords
+            function_id = call.func.id
 
-    return(args, keywords, function_id)
+            return(args, keywords, function_id)
