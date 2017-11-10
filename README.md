@@ -5,9 +5,10 @@ Autogeneration of luigi tasks using templates and code parsing.
 - Function for checking if a function is in scope
 - Function for checking modules imported
     - resolve possibly adding functions not from above
-- Parse function calls to define:
-    - args and arg types (if available)
 - Build network based off of dependencies
 
 ## Notes
 Notebook in docs/design has example of function parsing and environment profiling
+
+## Special Thanks
+Thanks to Will Landau and the [Drake Project](https://github.com/wlandau-lilly/drake) as inspiration.
