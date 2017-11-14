@@ -3,11 +3,11 @@ This is for gathering information about the python environment and
 determining function scope and calls
 
 Todo:
-    * Make a class for profiled functions
+    * find a way to get the modules imported from the script
+      that imports this one
     * write function to validate if a function profiled
       is in scope
     * if a funciton isn't in scope find a module that has it (?)
-
 """
 
 import ast
