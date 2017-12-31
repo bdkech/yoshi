@@ -14,6 +14,7 @@ import ast
 import types
 import builtins
 
+
 def get_arg_label(my_arg):
     """
     Get arguments from ast parsing and their type
@@ -40,13 +41,13 @@ def imports():
         if isinstance(val, types.ModuleType):
             yield val.__name__
 
+
 # pylint: disable=too-few-public-methods
 class ProfiledFunction(object):
     """
     Profiled function class for easily handing information
     and checks to see if it is in scope/what module
-    the function could belong to
-
+    the function could belong to.
     Todo:
         - fix argument parsing
         - Write function for detecting if in scope
@@ -68,10 +69,10 @@ class ProfiledFunction(object):
         """
 
         print([x for x in imports()])
-        if builtins.any(hasattr(module_name, self.function_id) for module_name in imports()):
+        if builtins.any(hasattr(
+                module_name, self.function_id) for module_name in imports()):
             return True
         return False
-
 
 
 def parse_function(function_string):
