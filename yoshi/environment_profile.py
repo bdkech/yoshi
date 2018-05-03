@@ -1,3 +1,4 @@
+# Author : Bobak Kechavarzi
 """
 This is for gathering information about the python environment and
 determining function scope and calls
